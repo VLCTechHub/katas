@@ -1,6 +1,8 @@
 Kata.ts
 =======
 
+Work in progress solution by @Carlos80 and @j-plou
+
 Boilerplate for katas, with:
 
 - Node
