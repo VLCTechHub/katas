@@ -2,26 +2,24 @@ import { conversor } from './conversor'
 
 describe('Index', () => {
   it('converts 1 to I', () => {
-    const input = 1;
-
-    const result = conversor(input)
-
-    expect(result).toEqual('I');
+    assertRomanNumber(1, 'I')
   });
 
   it('converts 2 to II', () => {
-    const input = 2;
-  
-    const result = conversor(input)
-
-    expect(result).toEqual('II');
+    assertRomanNumber(2, 'II')
   });
 
   it('converts 3 to III', () => {
-    const input = 3;
+    assertRomanNumber(3, 'III')
+  });
 
+  it('converts 4 to IV', () => {
+    assertRomanNumber(4,'IV')
+  })
+
+  function assertRomanNumber(input: number, expectedRomanNumber: string) {
     const result = conversor(input)
 
-    expect(result).toEqual('III');
-  });
+    expect(result).toEqual(expectedRomanNumber)
+  }
 });

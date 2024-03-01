@@ -5,5 +5,9 @@ export function conversor(input: number) {
         romanNumber += 'I'
     }
     
+    if (romanNumber == 'IIII') {
+        romanNumber = 'IV'
+    }
+    
     return romanNumber;
   }
