@@ -1,6 +1,6 @@
 package com.github.jobosk.romannumber.service;
 
-import org.apache.commons.lang3.tuple.Pair;
+import org.springframework.data.util.Pair;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -32,7 +32,7 @@ public class RomanNumberService {
 
     private String applyReplaces(String result, final List<Pair<String, String>> replaces) {
         for (final Pair<String, String> replace : replaces) {
-            result = result.replace(replace.getKey(), replace.getValue());
+            result = result.replace(replace.getFirst(), replace.getSecond());
         }
         return result;
     }
