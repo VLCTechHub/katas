@@ -1,9 +1,9 @@
 export function conversor(input: number) {
-    if (input == 1) {
-      return 'I';
+    let romanNumber = ''
+
+    for (let i=0; i < input; i++) {
+        romanNumber += 'I'
     }
-    if (input == 2) {
-      return 'II';
-    }
-    return '';
+    
+    return romanNumber;
   }
